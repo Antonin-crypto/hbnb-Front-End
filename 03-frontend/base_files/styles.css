@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00b9ff;
+    padding: 10px 20px;
+}
+
+.logo {
+    height: 40px;
+}
+
+.petitlogo {
+    width: 30px;
+    border-radius: 50px;
+    padding: 10px 35px;
+    margin: 40px;
+    border: 1px solid #ddd;
+    background-color: #a4aeb2;
+
+}
+
+
+label {
+    font-weight: bold;
+}
+#country-filter {
+    width: 5%;
+}
+
+.login-button {
+    color: #ffffff;
+    background-color: #00b9ff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.login-button:hover {
+    background-color: #fc00b9;
+}
+
+main {
+    padding: 100px;
+    text-align: center;
+}
+
+#filter {
+    margin-bottom: 20px;
+}
+
+#places-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.place-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.place-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.place-geux {
+    width: 300px;
+    border: 10px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.details-button {
+    background-color: #00b9ff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto 0;
+    text-align: center;
+}
+
+.details-button:hover {
+    background-color: #00b9ff;
+}
+
+footer {
+    background-color: #00b9ff;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

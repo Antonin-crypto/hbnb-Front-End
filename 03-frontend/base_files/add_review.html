@@ -3,22 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Review</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Place add_review_Details</title>
+    <link rel="stylesheet" href="style_add_review.css">
 </head>
 <body>
+    <header>
+        <a href="index.html">
+        <img src="logo.png" alt="Application Logo" class="logo">
+        </a>
+        <nav>
+            <a href="login.html" class="login-button">Login</a>
+        </nav>
+    </header>
     <main>
-        <form id="review-form">
-            <h2>Add a Review</h2>
-            <label for="place">Place:</label>
-            <input type="text" id="place" name="place" readonly>
-            
-            <label for="review">Review:</label>
-            <textarea id="review" name="review" required></textarea>
-            
-            <button type="submit">Submit</button>
-        </form>
+        <section class="place-details">
+            <h2>Beautiful Beach House</h2>
+            <p><strong>Host:</strong> John Doe</p>
+            <p><strong>Price per night:</strong> $150</p>
+            <p><strong>Location:</strong> Los Angeles, United States</p>
+            <p><strong>Description:</strong> A beautiful beach house with amazing views...</p>
+            <p><strong>Amenities:</strong> WiFi, Pool, Air Conditioning</p>
+        </section>
+
+        <section class="reviews">
+            <h2>Reviews</h2>
+            <div class="review-card">
+                <p><strong>Jane Smith:</strong> Great place to stay!</p>
+                <p><strong>Rating:</strong> ★★★★★</p>
+            </div>
+            <div class="review-card">
+                <p><strong>Robert Brown:</strong> Amazing location and very comfortable.</p>
+                <p><strong>Rating:</strong> ★★★★★</p>
+            </div>
+        </section>
     </main>
+    <footer>
+        <p>© 2024 HBNB Evolution. All rights reserved.</p>
+    </footer>
     <script src="scripts.js"></script>
 </body>
 </html>
