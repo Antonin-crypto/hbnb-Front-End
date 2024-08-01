@@ -35,14 +35,20 @@ main {
     text-align: center;
 }
 
-.place-details {
+#place-details {
     background-color: #fff;
     border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px auto;
-    width: 80%;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 15px auto;
+    width: 100%;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.place-detail-card div {
+    gap: 0px;
+    display: grid;
+
 }
 
 .place-info p {
@@ -51,8 +57,9 @@ main {
 
 .reviews {
     margin: 100px auto;
-    width: 83%;
+    width: 85px;
 }
+
 
 .review-card {
     background-color: #fff;
@@ -120,6 +127,17 @@ main {
     background-color: #89c0a1;
 }
 
+
+.visually-hidden {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 15px auto;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
 footer {
     background-color: #7ec3ff;
     color: white;
@@ -129,3 +147,4 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
