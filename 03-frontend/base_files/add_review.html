@@ -8,24 +8,24 @@
     <script src="scripts.js"></script>
 </head>
 <body>
-    <header>
-        <a href="index.html">
-        <img src="logo.png" alt="Application Logo" class="logo">
-        </a>
-        <nav>
-        </nav>
-    </header>
     <main>
-        <section class="place-details">
-            
-        </section>
-        <section class="reviews">
-            <h2>Reviews</h2>
-            <div class="review-card">
+        <section>
+            <div class="visually-hidden">
+                <h2 class="">Add a Review</h2>
+                <form id="review-form" class="review-form">
+                    <label for="review-text">Your Review:</label>
+                    <textarea id="review-text" name="review-text" required></textarea>
 
-            </div>
-            <div class="review-card">
-
+                    <label for="review-rating">Rating:</label>
+                    <select id="review-rating" name="review-rating">
+                        <option value="5">5 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="2">2 Stars</option>
+                        <option value="1">1 Star</option>
+                    </select>
+                    <button type="submit">Submit Review</button>
+                </form>
             </div>
         </section>
     </main>
