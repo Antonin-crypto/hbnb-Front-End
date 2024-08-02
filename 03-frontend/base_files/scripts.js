@@ -72,12 +72,11 @@ document.addEventListener('DOMContentLoaded', () => {
         function displayPlaces(places) {
             const placesList = document.getElementById('places-list');
             placesList.innerHTML = '';
-
             places.forEach(place => {
                 const placeCard = document.createElement('div');
                 placeCard.className = 'place-card';
                 placeCard.innerHTML = `
-                <img src="images/${place.image}" alt="${place.description}" class="place-image"/>
+                <img src= alt="Image of ${place.name}" class="place-image">
                 <h2>${place.description}</h2>
                 <p>Price per night: $ ${place.price_per_night}</p>
                 <p>Location: ${place.city_name}, ${place.country_name}</p>
@@ -160,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function displayPlaceDetails(place) {
         const placeDetails = document.getElementById('place-details');
         placeDetails.innerHTML = `
-            <img src="images/${place.image}" alt="${place.description}" class="place-detail-image"/>
+            <img src= alt="${place.description}" class="place-detail-image"/>
             <h2 class="title">${place.description}</h2>
             <div class="place-detail-card">
             <ul>
@@ -180,10 +179,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const displayReviews = document.getElementById('review-card');
         displayReviews.innerHTML = '';
 
-        const supprimerh2 = document.querySelector('#Review h2');
-        if (supprimerh2) {
-            supprimerh2.remove();
-        }
+        const supprimerh2 = document.querySelector('#reviews h2');
+        if (supprimerh2) {  // Vérifie si supprimerh2 n'est pas null
+        supprimerh2.remove();
+}
 
         if (place.reviews.length > 0) {
             // Ajouter le titre uniquement s'il y a des avis

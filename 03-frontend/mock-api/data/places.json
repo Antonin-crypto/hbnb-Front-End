@@ -7,7 +7,6 @@
         "price_per_night": 100.0,
         "city_id": "city-1",
         "city_name": "New York",
-        "image": "maison.jpg",
         "country_code": "US",
         "country_name": "United States",
         "number_of_rooms": 3,
